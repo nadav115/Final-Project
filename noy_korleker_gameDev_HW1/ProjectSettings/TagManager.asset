@@ -7,6 +7,7 @@ TagManager:
   - NPC
   - gun
   - granade
+  - ignore
   layers:
   - Default
   - TransparentFX

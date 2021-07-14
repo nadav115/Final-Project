@@ -12,8 +12,6 @@ public class TargetBehavier : MonoBehaviour
     {
         height[0] = 4;
         height[1] = 14;
-        for(int i = 0; i<100; i++)
-            print(Random.Range(0, 2));
         
     }
 

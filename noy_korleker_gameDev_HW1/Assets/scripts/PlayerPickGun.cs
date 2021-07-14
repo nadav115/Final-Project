@@ -10,24 +10,24 @@ public class PlayerPickGun : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        touching = false;
+        //touching = false;
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Player")
-        {
-            touching = true;
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.tag == "Player")
+    //    {
+    //        touching = true;
+    //    }
+    //}
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-            touching = false;
-    }
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.tag == "Player")
+    //        touching = false;
+    //}
     private void OnMouseDown()
     {
-        if(gun.gameObject.activeSelf == false && touching)
+        if(gun.gameObject.activeSelf == false )
         {
             gun.gameObject.SetActive(true);
             this.gameObject.SetActive(false);
