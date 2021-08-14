@@ -25,26 +25,14 @@ public class ThrowGranade : MonoBehaviour
         {
             if (!isThrown)
             {
-                ThrowingGranade();
-                
-            }
-            
+                ThrowingGranade();                
+            }            
         }
     }
 
     void ThrowingGranade()
     {
         isThrown = true;
-
-        //Rigidbody rb1 = proj.GetComponent<Rigidbody>();
-        //rb1.useGravity = true;
-
-        //Rigidbody rb = GetComponent<Rigidbody>();
-        //Vector3 direction = player.transform.forward * 10;
-        //direction.y = 3;
-        //rb.useGravity = true;
-        //rb.AddForce(direction,ForceMode.Impulse);
-        //rb1.AddForce(direction, ForceMode.Impulse);
 
         nades.Clear();
         for (int i = 0; i < spwan.Count; i++)
@@ -69,17 +57,5 @@ public class ThrowGranade : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         isThrown = false;
-      
-        //yield return new WaitForSeconds(1.5f);
-        //explosion.SetActive(true);
-        //part1.SetActive(false);
-        //part2.SetActive(false);
-        //yield return new WaitForSeconds(5f);
-        //explosion.SetActive(false);
-
-        //part1.SetActive(false);
-        //part2.SetActive(false);
-        //Collider[] objectsCollider = Physics.OverlapSphere(transform.position,5)
-
     }
 }
